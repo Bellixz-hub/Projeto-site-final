@@ -1,25 +1,62 @@
-                    <!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiza</title>
+    <title>Cine&Séries - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>Catálogo</h1>
-            <p>FILMES DE I a Z</p>
-               <h2> TOP 10 FILMES</h2>
-      <p> </p>
 
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>IZAPRIME</h1>
+        <p>Bem-vindo,aqui voce encontra variedades de filmes e series de IaZ!</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
 
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://ingresso-a.akamaihd.net/prd/img/movie/a-bela-e-a-fera-1991/363fa6fb-e213-4878-8607-1dfd2c0e6c4c.jpg" alt="Poster do Filme 1">
+                <h3>Bela e a Fera</h3>
+                <p>Infantil/Musical </p>
+                <p>1991</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://www.papodecinema.com.br/wp-content/uploads/2012/06/20190228-alice-no-pais-das-maravilhas-poster.jpg" alt="Poster do Filme 2">
+                <h3>Alice no Pais das Maravilhas
+                </h3>
+                <p>Infantil/Aventura</p>
+                <p>2022</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBooAwGSszwo1rUJnMpfEMVsN2A5lcnX0gUcYlcHJGdzZTKiV" alt="Poster do Filme 3">
+                <h3>Peter Pan</h3>
+                <p>Infantil/Aventura </p>
+                <p>1953</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cine&Séries. Todos os direitos reservados.</p>
+    </footer>
 
-
-
-
-
-
-</body>      
-
+    <script src="script.js"></script>
+</body>
 </html>
